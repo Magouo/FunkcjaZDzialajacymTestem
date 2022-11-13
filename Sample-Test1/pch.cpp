@@ -1,4 +1,20 @@
 #include "pch.h"
+
+//Zadanie: Napisz funkcjê przyjmuj¹c¹ dwie kolekcje liczb ca³kowitych, która sprawdza,
+//czy druga kolekcja zawiera wszystkie kwadraty elementów z pierwszej kolekcji, kolejnoœæ nie ma znaczenia.
+//
+//Przyk³ady :
+//    pusta lista; pusta lista > prawda
+//    1; 1 > prawda
+//    1, 2; 4, 1 > prawda
+//    1, 2; 1, 2, 3, 4 > prawda, bo posiada 1 i 4
+//    1, 1, 1, 1, 1; 1 > prawda, bo wielokrotnoœci nie maj¹ znaczenia
+//    1, 3, 2; 4, 8, 1 > fa³sz
+//
+//    Zadanie mo¿esz napisaæ w dowolnym jêzyku.Uwzglêdnij przypadki testowe i napisz testy tej¿e funkcji,
+//  najlepiej wykorzystuj¹c frameworki do testów(w skrócie chodzi o mo¿liwoœæ wykonywania zautomatyzowanych testów).
+//
+
 bool czyDrugaKolekcjaZawieraWszystkieKwadratyElementowZPierwszej(vector<int>lista1, vector<int>lista2)
 {
 	vector<int>potegiLiczb;
@@ -120,8 +136,8 @@ bool czyDrugaKolekcjaZawieraWszystkieKwadratyElementowZPierwszej(vector<int>list
 }
 //int main()
 //{
-//	vector<int>jeden = {};
-//	vector<int>dwa = {};
+//	vector<int>jeden = {1,1,1,7,2,2,212,5,2,4,12,1,21};
+//	vector<int>dwa = {8,575,7,57,5,6,4,5,7,1,4,4,4,45,1};
 //	if (czyDrugaKolekcjaZawieraWszystkieKwadratyElementowZPierwszej(jeden, dwa) == true) {
 //		cout << "Posiada potegi";
 //	}

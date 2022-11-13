@@ -10,7 +10,10 @@ bool czyDrugaKolekcjaZawieraWszystkieKwadratyElementowZPierwszej(vector<int>list
 	sort(lista2.begin(), lista2.end());
 	lista2.erase(unique(lista2.begin(), lista2.end()), lista2.end());
 
-	if (lista1.size() == 0 || lista2.size() == 0)
+	if (lista1.size() == 0 && lista2.size() == 0) {
+		return true;
+	}
+	else if (lista1.size() == 0 || lista2.size() == 0)
 	{
 		return false;
 	}
@@ -117,8 +120,8 @@ bool czyDrugaKolekcjaZawieraWszystkieKwadratyElementowZPierwszej(vector<int>list
 }
 //int main()
 //{
-//	vector<int>jeden = {3*3};
-//	vector<int>dwa = { 3 };
+//	vector<int>jeden = {};
+//	vector<int>dwa = {};
 //	if (czyDrugaKolekcjaZawieraWszystkieKwadratyElementowZPierwszej(jeden, dwa) == true) {
 //		cout << "Posiada potegi";
 //	}
